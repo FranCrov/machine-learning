@@ -1,0 +1,13 @@
+INFORME - Regresión Logística
+Fecha: 2026-06-17 19:55
+Dataset: Titanic (OpenML)
+Variable objetivo: sobrevivió (sí / no)
+
+Exactitud:  0.8092
+Precisión:  0.7717
+Recall:     0.7100
+F1-score:   0.7396
+
+Matriz de confusión:
+[[141  21]
+ [ 29  71]]

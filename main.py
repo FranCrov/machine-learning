@@ -3,9 +3,8 @@ Trabajo Práctico - Machine Learning
 Menú principal de la aplicación.
 """
 
-from algoritmos import lineal_simple
-
-
+from algoritmos import lineal_simple, logistica, svr
+from algoritmos import naive_bayes
 def mostrar_menu():
     print("\n" + "=" * 50)
     print("   MENÚ - ALGORITMOS DE MACHINE LEARNING")
@@ -36,23 +35,23 @@ def main():
         if opcion == "1":
             lineal_simple.ejecutar()
         elif opcion == "2":
-            print("Regresión lineal múltiple: todavía no implementado.")
+            print("Regresión lineal múltiple:")
         elif opcion == "3":
             print("Regresión polinomial: todavía no implementado.")
         elif opcion == "4":
-            print("SVR: todavía no implementado.")
+            svr.ejecutar()
         elif opcion == "5":
             print("Árbol de decisión (regresión): todavía no implementado.")
         elif opcion == "6":
             print("Bosque aleatorio (regresión): todavía no implementado.")
         elif opcion == "7":
-            print("Regresión logística: todavía no implementado.")
+            logistica.ejecutar()   
         elif opcion == "8":
             print("KNN: todavía no implementado.")
         elif opcion == "9":
             print("SVM: todavía no implementado.")
         elif opcion == "10":
-            print("Naive Bayes: todavía no implementado.")
+            naive_bayes.ejecutar()
         elif opcion == "11":
             print("Árbol de decisión (clasificación): todavía no implementado.")
         elif opcion == "12":
