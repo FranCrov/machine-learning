@@ -6,6 +6,8 @@ Menú principal de la aplicación.
 from algoritmos import lineal_simple
 from algoritmos import polinomial
 from algoritmos import bosques_aleatorios_reg
+from algoritmos import svm_clasificacion
+from algoritmos import bosques_aleatorios_clas
 
 def mostrar_menu():
     print("\n" + "=" * 50)
@@ -45,20 +47,19 @@ def main():
         elif opcion == "5":
             print("Árbol de decisión (regresión): todavía no implementado.")
         elif opcion == "6":
-            print("Bosque aleatorio (regresión): todavía no implementado.")
             bosques_aleatorios_reg.ejecutar()
         elif opcion == "7":
             print("Regresión logística: todavía no implementado.")
         elif opcion == "8":
             print("KNN: todavía no implementado.")
         elif opcion == "9":
-            print("SVM: todavía no implementado.")
+            svm_clasificacion.ejecutar()
         elif opcion == "10":
             print("Naive Bayes: todavía no implementado.")
         elif opcion == "11":
             print("Árbol de decisión (clasificación): todavía no implementado.")
         elif opcion == "12":
-            print("Bosque aleatorio (clasificación): todavía no implementado.")
+            bosques_aleatorios_clas.ejecutar()
         elif opcion == "0":
             print("¡Hasta luego!")
             break
