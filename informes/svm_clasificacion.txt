@@ -1,0 +1,14 @@
+INFORME - Máquinas de Vectores de Soporte (SVM Clasificación)
+Fecha: 2026-06-17 19:30
+Dataset: Breast Cancer Wisconsin (scikit-learn)
+Exactitud (Accuracy): 95.61%
+
+Reporte Detallado:
+              precision    recall  f1-score   support
+
+   malignant       0.97      0.91      0.94        43
+      benign       0.95      0.99      0.97        71
+
+    accuracy                           0.96       114
+   macro avg       0.96      0.95      0.95       114
+weighted avg       0.96      0.96      0.96       114
