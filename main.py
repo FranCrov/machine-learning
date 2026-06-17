@@ -3,8 +3,7 @@ Trabajo Práctico - Machine Learning
 Menú principal de la aplicación.
 """
 
-from algoritmos import lineal_simple
-
+from algoritmos import lineal_simple, lineal_multiple
 
 def mostrar_menu():
     print("\n" + "=" * 50)
@@ -27,42 +26,41 @@ def mostrar_menu():
     print(" 0. Salir")
     print("=" * 50)
 
-
 def main():
-    while True:
+    var = True
+    while var:
         mostrar_menu()
         opcion = input("Elegí una opción: ").strip()
 
         if opcion == "1":
             lineal_simple.ejecutar()
         elif opcion == "2":
-            print("Regresión lineal múltiple: todavía no implementado.")
+            lineal_multiple.ejecutar()
         elif opcion == "3":
             print("Regresión polinomial: todavía no implementado.")
         elif opcion == "4":
             print("SVR: todavía no implementado.")
         elif opcion == "5":
-            print("Árbol de decisión (regresión): todavía no implementado.")
+            arbol_regresion.ejecutar()
         elif opcion == "6":
             print("Bosque aleatorio (regresión): todavía no implementado.")
         elif opcion == "7":
             print("Regresión logística: todavía no implementado.")
         elif opcion == "8":
-            print("KNN: todavía no implementado.")
+            knn.ejecutar()
         elif opcion == "9":
             print("SVM: todavía no implementado.")
         elif opcion == "10":
             print("Naive Bayes: todavía no implementado.")
         elif opcion == "11":
-            print("Árbol de decisión (clasificación): todavía no implementado.")
+            arbol_clasificacion.ejecutar()
         elif opcion == "12":
             print("Bosque aleatorio (clasificación): todavía no implementado.")
         elif opcion == "0":
             print("¡Hasta luego!")
-            break
+            var = False
         else:
             print("Opción inválida. Intentá de nuevo.")
-
 
 if __name__ == "__main__":
     main()
