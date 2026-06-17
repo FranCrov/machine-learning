@@ -4,7 +4,8 @@ Menú principal de la aplicación.
 """
 
 from algoritmos import lineal_simple
-
+from algoritmos import polinomial
+from algoritmos import bosques_aleatorios_reg
 
 def mostrar_menu():
     print("\n" + "=" * 50)
@@ -38,13 +39,14 @@ def main():
         elif opcion == "2":
             print("Regresión lineal múltiple: todavía no implementado.")
         elif opcion == "3":
-            print("Regresión polinomial: todavía no implementado.")
+            polinomial.ejecutar()
         elif opcion == "4":
             print("SVR: todavía no implementado.")
         elif opcion == "5":
             print("Árbol de decisión (regresión): todavía no implementado.")
         elif opcion == "6":
             print("Bosque aleatorio (regresión): todavía no implementado.")
+            bosques_aleatorios_reg.ejecutar()
         elif opcion == "7":
             print("Regresión logística: todavía no implementado.")
         elif opcion == "8":

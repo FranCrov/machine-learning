@@ -1,0 +1,7 @@
+INFORME - Regresión Polinomial
+Fecha: 2026-06-17 18:50
+Dataset: Sintético No Lineal (NumPy)
+Grado del polinomio: 2
+MSE:  7.7200
+RMSE: 2.7785
+R2:   0.9776

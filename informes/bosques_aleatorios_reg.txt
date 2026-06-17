@@ -1,0 +1,7 @@
+INFORME - Bosques Aleatorios (Regresión)
+Fecha: 2026-06-17 19:04
+Dataset: California Housing (scikit-learn)
+Configuración: n_estimators=100, max_depth=10
+MSE:  0.5574
+RMSE: 0.7466
+R2:   0.5746
