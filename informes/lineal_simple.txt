@@ -1,0 +1,11 @@
+INFORME - Regresión Lineal Simple
+Fecha: 2026-06-17 18:33
+Dataset: Diabetes (scikit-learn)
+Variable predictora: bmi (índice de masa corporal)
+Variable objetivo: progresión de la enfermedad
+
+Coeficiente (pendiente): 998.5777
+Intercepto: 152.0034
+MSE:  4061.8259
+RMSE: 63.7325
+R2:   0.2334
