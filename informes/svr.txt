@@ -1,0 +1,9 @@
+INFORME - SVR (Máquinas de Vectores de Soporte para Regresión)
+Fecha: 2026-06-17 19:06
+Dataset: Energy Efficiency (OpenML)
+Variable objetivo: y1 (carga de calefacción)
+
+Kernel: rbf, C=100, gamma=scale
+MSE:  2.6575
+RMSE: 1.6302
+R2:   0.9734

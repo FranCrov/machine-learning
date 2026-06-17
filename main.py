@@ -3,6 +3,9 @@ Trabajo Práctico - Machine Learning
 Menú principal de la aplicación.
 """
 
+from algoritmos import logistica
+from algoritmos import svr
+from algoritmos import naive_bayes
 from algoritmos import lineal_simple
 from algoritmos import  lineal_multiple
 from algoritmos import polinomial
@@ -44,19 +47,19 @@ def main():
         elif opcion == "3":
             polinomial.ejecutar()
         elif opcion == "4":
-            print("SVR: todavía no implementado.")
+            svr.ejecutar()
         elif opcion == "5":
             arbol_regresion.ejecutar()
         elif opcion == "6":
             bosques_aleatorios_reg.ejecutar()
         elif opcion == "7":
-            print("Regresión logística: todavía no implementado.")
+            logistica.ejecutar()   
         elif opcion == "8":
             knn.ejecutar()
         elif opcion == "9":
             svm_clasificacion.ejecutar()
         elif opcion == "10":
-            print("Naive Bayes: todavía no implementado.")
+            naive_bayes.ejecutar()
         elif opcion == "11":
             arbol_clasificacion.ejecutar()
         elif opcion == "12":

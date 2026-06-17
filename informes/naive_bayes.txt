@@ -1,0 +1,14 @@
+INFORME - Naive Bayes
+Fecha: 2026-06-17 20:12
+Dataset: Wine (scikit-learn)
+Variable objetivo: tipo de vino (3 clases)
+
+Exactitud:  0.9722
+Precisión:  0.9744
+Recall:     0.9762
+F1-score:   0.9743
+
+Matriz de confusión:
+[[12  0  0]
+ [ 1 13  0]
+ [ 0  0 10]]
