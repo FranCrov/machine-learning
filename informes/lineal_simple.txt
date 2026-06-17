@@ -1,5 +1,5 @@
 INFORME - Regresión Lineal Simple
-Fecha: 2026-06-17 18:33
+Fecha: 2026-06-17 18:50
 Dataset: Diabetes (scikit-learn)
 Variable predictora: bmi (índice de masa corporal)
 Variable objetivo: progresión de la enfermedad

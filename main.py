@@ -3,8 +3,16 @@ Trabajo Práctico - Machine Learning
 Menú principal de la aplicación.
 """
 
-from algoritmos import lineal_simple, logistica, svr
+from algoritmos import logistica
+from algoritmos import svr
 from algoritmos import naive_bayes
+from algoritmos import lineal_simple
+from algoritmos import  lineal_multiple
+from algoritmos import polinomial
+from algoritmos import bosques_aleatorios_reg
+from algoritmos import svm_clasificacion
+from algoritmos import bosques_aleatorios_clas
+
 def mostrar_menu():
     print("\n" + "=" * 50)
     print("   MENÚ - ALGORITMOS DE MACHINE LEARNING")
@@ -26,42 +34,41 @@ def mostrar_menu():
     print(" 0. Salir")
     print("=" * 50)
 
-
 def main():
-    while True:
+    var = True
+    while var:
         mostrar_menu()
         opcion = input("Elegí una opción: ").strip()
 
         if opcion == "1":
             lineal_simple.ejecutar()
         elif opcion == "2":
-            print("Regresión lineal múltiple:")
+            lineal_multiple.ejecutar()
         elif opcion == "3":
-            print("Regresión polinomial: todavía no implementado.")
+            polinomial.ejecutar()
         elif opcion == "4":
             svr.ejecutar()
         elif opcion == "5":
-            print("Árbol de decisión (regresión): todavía no implementado.")
+            arbol_regresion.ejecutar()
         elif opcion == "6":
-            print("Bosque aleatorio (regresión): todavía no implementado.")
+            bosques_aleatorios_reg.ejecutar()
         elif opcion == "7":
             logistica.ejecutar()   
         elif opcion == "8":
-            print("KNN: todavía no implementado.")
+            knn.ejecutar()
         elif opcion == "9":
-            print("SVM: todavía no implementado.")
+            svm_clasificacion.ejecutar()
         elif opcion == "10":
             naive_bayes.ejecutar()
         elif opcion == "11":
-            print("Árbol de decisión (clasificación): todavía no implementado.")
+            arbol_clasificacion.ejecutar()
         elif opcion == "12":
-            print("Bosque aleatorio (clasificación): todavía no implementado.")
+            bosques_aleatorios_clas.ejecutar()
         elif opcion == "0":
             print("¡Hasta luego!")
-            break
+            var = False
         else:
             print("Opción inválida. Intentá de nuevo.")
-
 
 if __name__ == "__main__":
     main()

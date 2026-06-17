@@ -15,21 +15,17 @@ def ejecutar():
     print("Variable predictora: índice de masa corporal (bmi)")
     print("Variable a predecir: progresión de la enfermedad\n")
 
-    # 1. Cargar el dataset
     datos = load_diabetes()
-    X = datos.data[:, np.newaxis, 2]  # columna 'bmi' (índice 2)
+    X = datos.data[:, np.newaxis, 2] 
     y = datos.target
 
-    # 2. Separar en entrenamiento y prueba
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
 
-    # 3. Entrenar el modelo
     modelo = LinearRegression()
     modelo.fit(X_train, y_train)
 
-    # 4. Predecir y calcular métricas
     y_pred = modelo.predict(X_test)
     mse = mean_squared_error(y_test, y_pred)
     rmse = np.sqrt(mse)
@@ -41,7 +37,6 @@ def ejecutar():
     print(f"RMSE: {rmse:.2f}")
     print(f"R²:   {r2:.4f}")
 
-    # 5. Graficar
     plt.figure(figsize=(8, 6))
     plt.scatter(X_test, y_test, color="steelblue", label="Datos reales")
     plt.plot(X_test, y_pred, color="firebrick", linewidth=2, label="Predicción")
@@ -51,7 +46,6 @@ def ejecutar():
     plt.legend()
     plt.tight_layout()
 
-    # 6. Guardar gráfico e informe
     os.makedirs("graficos", exist_ok=True)
     ruta_grafico = "graficos/lineal_simple.png"
     plt.savefig(ruta_grafico)
