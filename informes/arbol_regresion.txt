@@ -1,0 +1,13 @@
+=== Algoritmo Aplicado: Árbol de Decisión (Regresión) ===
+Fecha: 2026-06-18 18:32
+• Dataset elegido: Diabetes (scikit-learn)
+• Resultados obtenidos:
+  - MSE:  3526.0155
+  - RMSE: 59.3803
+  - R2:   0.3345
+
+• Comparación con lo esperado:
+  Se esperaba que el Árbol de Decisión pudiera capturar relaciones no lineales entre las variables de los pacientes y la progresión de la diabetes mediante subdivisiones de los datos. Al comparar este R2 con el de una regresión lineal simple, podemos evaluar si el enfoque basado en reglas (árboles) funciona mejor para este conjunto de datos que el enfoque basado en una línea recta matemática.
+
+• Captura de resultados:
+  [PEGAR AQUÍ LA CAPTURA DEL GRÁFICO: graficos/arbol_regresion.png]

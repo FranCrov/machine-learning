@@ -12,6 +12,9 @@ from algoritmos import polinomial
 from algoritmos import bosques_aleatorios_reg
 from algoritmos import svm_clasificacion
 from algoritmos import bosques_aleatorios_clas
+from algoritmos import knn
+from algoritmos import arbol_clasificacion
+from algoritmos import arbol_regresion
 
 def mostrar_menu():
     print("\n" + "=" * 50)

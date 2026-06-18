@@ -1,0 +1,11 @@
+=== Algoritmo Aplicado: K Vecinos Más Cercanos (KNN) ===
+Fecha: 2026-06-18 18:30
+• Dataset elegido: Wine (scikit-learn)
+• Resultados obtenidos:
+  - Precisión (Accuracy): 0.7222
+
+• Comparación con lo esperado:
+  Al tratar con un problema de clasificación, se espera que el algoritmo KNN agrupe los datos según las similitudes en las características químicas para predecir la categoría del vino. Una alta precisión en la diagonal de la matriz de confusión indica que las clases forman grupos bien definidos.
+
+• Captura de resultados:
+  [PEGAR AQUÍ LA CAPTURA DEL GRÁFICO: graficos/knn.png]

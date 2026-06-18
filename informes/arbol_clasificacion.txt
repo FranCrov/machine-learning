@@ -1,0 +1,11 @@
+=== Algoritmo Aplicado: Árbol de Decisión (Clasificación) ===
+Fecha: 2026-06-18 18:32
+• Dataset elegido: Iris (scikit-learn)
+• Resultados obtenidos:
+  - Precisión (Accuracy): 1.0000
+
+• Comparación con lo esperado:
+  Se esperaba que el modelo generara divisiones lógicas basadas en las dimensiones de las flores para clasificarlas en su especie correcta. Una alta precisión y una diagonal fuerte en la matriz de confusión indican que el árbol logró encontrar reglas efectivas sin sobreajustarse a los datos de entrenamiento.
+
+• Captura de resultados:
+  [PEGAR AQUÍ LA CAPTURA DEL GRÁFICO: graficos/arbol_clasificacion.png]
